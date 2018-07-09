@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ru.redhat.itopcase.bpa.demo</groupId>
+	<artifactId>bpmn-service-project</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<properties>
+		<runtime.version>7.7.0.Final-redhat-7</runtime.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.kie</groupId>
+			<artifactId>kie-api</artifactId>
+			<version>${runtime.version}</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+</project>
