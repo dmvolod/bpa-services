@@ -4,18 +4,49 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ru.redhat.itopcase.bpa.demo</groupId>
 	<artifactId>bpmn-service-project</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>RELEASE</version>
 
 	<properties>
 		<runtime.version>7.7.0.Final-redhat-7</runtime.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>redhat-ga</id>
+			<name>redhat-ga</name>
+			<url>https://maven.repository.redhat.com/ga</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
-		<dependency>
+	    <dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-api</artifactId>
 			<version>${runtime.version}</version>
 			<scope>compile</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>ru.redhat.itopcase.bpa.demo</groupId>
+			<artifactId>bpmn-data-project</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.kie.server</groupId>
+            <artifactId>kie-server-client</artifactId>
+			<version>${runtime.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.11.redhat-4</version>
+		</dependency>
+		<dependency>
+          <groupId>com.thoughtworks.xstream</groupId>
+          <artifactId>xstream</artifactId>
+          <version>1.4.9.redhat-2</version>
+        </dependency>
 	</dependencies>
 </project>

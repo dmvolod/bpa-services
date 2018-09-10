@@ -4,9 +4,9 @@
 
   <groupId>ru.redhat.itopcase.bpa.demo</groupId>
   <artifactId>bpa-services</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>RELEASE</version>
   <packaging>pom</packaging>
-
+  
   <modules>
     <module>bpmn-service-project</module>
     <module>bpmn-data-project</module>
