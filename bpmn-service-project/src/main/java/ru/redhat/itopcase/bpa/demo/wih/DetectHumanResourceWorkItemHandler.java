@@ -11,7 +11,8 @@ public class DetectHumanResourceWorkItemHandler implements WorkItemHandler {
 	}
 
 	public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
-
+		System.out.println("DetectHumanResourceWorkItemHandler executed");
+		manager.completeWorkItem(workItem.getId(), null);
 	}
 
 

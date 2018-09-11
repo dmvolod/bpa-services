@@ -11,7 +11,8 @@ public class SelectManagerWorkItemHandler implements WorkItemHandler {
 	}
 
 	public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
-
+		System.out.println("SelectManagerWorkItemHandler executed");
+		manager.completeWorkItem(workItem.getId(), null);
 	}
 
 

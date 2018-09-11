@@ -42,11 +42,9 @@ public class RunProcess {
 		
 		params.put("user", user);
 
-        Long processInstanceId = processServices.startProcess(CONTAINER_ID, PROCESS_ID, params); //container_id,process_id
+        Long processInstanceId = processServices.startProcess(CONTAINER_ID, PROCESS_ID, params);
 
         System.out.println("Start Evaluation process " + processInstanceId);
-
-		//UserTaskServicesClient taskServices = client.getServicesClient(UserTaskServicesClient.class);
 	}
 
 }

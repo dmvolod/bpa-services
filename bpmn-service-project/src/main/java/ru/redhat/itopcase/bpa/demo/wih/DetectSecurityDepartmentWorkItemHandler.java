@@ -11,7 +11,8 @@ public class DetectSecurityDepartmentWorkItemHandler implements WorkItemHandler 
 	}
 
 	public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
-
+		System.out.println("DetectSecurityDepartmentWorkItemHandler executed");
+		manager.completeWorkItem(workItem.getId(), null);
 	}
 
 

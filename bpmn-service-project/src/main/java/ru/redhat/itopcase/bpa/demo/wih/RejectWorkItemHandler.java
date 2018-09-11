@@ -11,7 +11,8 @@ public class RejectWorkItemHandler implements WorkItemHandler {
 	}
 
 	public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
-
+		System.out.println("RejectWorkItemHandler executed");
+		manager.completeWorkItem(workItem.getId(), null);
 	}
 
 

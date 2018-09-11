@@ -11,7 +11,8 @@ public class ApproveWorkItemHandler implements WorkItemHandler {
 	}
 
 	public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
-
+		System.out.println("ApproveWorkItemHandler executed");
+		manager.completeWorkItem(workItem.getId(), null);
 	}
 
 
