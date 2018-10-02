@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kie-container container-alias="bpa-project-container-alias" container-id="bpa-project-container">
+	<config-items>
+		<itemName>KBase</itemName>
+		<itemValue></itemValue>
+		<itemType>BPM</itemType>
+	</config-items>
+	<config-items>
+		<itemName>KSession</itemName>
+		<itemValue></itemValue>
+		<itemType>BPM</itemType>
+	</config-items>
+	<config-items>
+		<itemName>MergeMode</itemName>
+		<itemValue>MERGE_COLLECTIONS</itemValue>
+		<itemType>BPM</itemType>
+	</config-items>
+	<config-items>
+		<itemName>RuntimeStrategy</itemName>
+		<itemValue>SINGLETON</itemValue>
+		<itemType>BPM</itemType>
+	</config-items>
+	<release-id>
+		<artifact-id>bpa-project</artifact-id>
+		<group-id>ru.redhat.itopcase.bpa.demo</group-id>
+		<version>1.0.0-SNAPSHOT</version>
+	</release-id>
+</kie-container>

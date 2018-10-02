@@ -15,11 +15,11 @@ import ru.redhat.itopcase.bpa.demo.data.User;
 
 public class RunProcess {
     // jBPM Process and Project constants
-    private static final String USERNAME = "admin";
-    private static final String PASSWORD = "admin";
+    private static final String USERNAME = "user";
+    private static final String PASSWORD = "password";
     private static final String CONTAINER_ID = "bpa-project_1.0.0-SNAPSHOT";
     private static final String PROCESS_ID = "Vacation";
-    private static final String SERVER_URL = "http://myapp-kieserver-pam70.apps.ose.rht.mont.com/services/rest/server";
+    private static final String SERVER_URL = "http://<kie server URL>/services/rest/server";
 
 	public static void main(String[] args) {
 		KieServicesConfiguration config =  KieServicesFactory.newRestConfiguration(SERVER_URL, USERNAME, PASSWORD);
